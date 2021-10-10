@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ID-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="lightslider.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <link rel="stylesheet" href="https://use.typekit.net/chc3bhb.css">
+</head>
+<body>
+    
+    <div class="paragraph">
+        <p id="desc">GENERAL KNOWLEDGE QUIZ GAME</p>
+        <br>
+        <p id="madeBy">John Paul Pineda</p>
+    </div>
+   <!-- slider starts  -->
+   <div class="container-fluid" id="container" style="width:85%;"> 
+    <!-- slider -->
+    <ul id="autoWidth" class="cS-hidden">
+        <li class="item-a">
+                
+            <a href="Geography.html" class="box">
+                <p class="category">GEOGRAPHY</p>
+            <!-- model -->
+                <img src="images/Geography.jpg" alt=""c class="model">
+            <!-- details -->
+                <div class="details">
+                    <!-- <img src="images/History.jpg" alt="" class="logo" width="100px"style="height: auto;"> -->
+                
+                </div>
+
+                
+            </a>
+        </li>
+        
+        <!-- No.2 -->
+        <li class="item-b">
+            
+            <a href="History.html" class="box" >
+                <p class="category">History</p>
+            <!-- model -->
+                <img src="images/History.jpg" alt="" class="model">
+            <!-- details -->
+                <div class="details">
+                    <!-- <img src="images/History.jpg" alt="" class="logo" width="100px"style="height: auto;"> -->
+                
+                </div>
+
+            </a>
+        </li>
+
+        <!-- No.3 -->
+        <li class="item-c">
+            
+            <a href="Politics.html" class="box">
+                <p class="category">Politics</p>
+            <!-- model -->
+                <img src="images/Politics.jpg" alt=""c class="model">
+            <!-- details -->
+                <div class="details">
+                    <!-- <img src="images/music.jpg" alt="" class="logo" width="100px"style="height: auto;"> -->
+                
+                </div>
+
+            </a>
+        </li>
+
+        <!-- No.4 -->
+        <li class="item-d">
+            
+            <a href="Sports.html" class="box">
+                <p class="category">Sports</p>
+            <!-- model -->
+                <img src="images/Sports.jpg" alt=""c class="model">
+            <!-- details -->
+                <div class="details">
+                    <!-- <img src="images/History.jpg" alt="" class="logo" width="100px"style="height: auto;"> -->
+                
+                </div>
+
+            </a>
+        </li>
+
+        <!-- No.5 -->
+        <li class="item-e">
+            
+            <a href="Tv.html" class="box">
+                <p class="category">TV</p>
+            <!-- model -->
+                <img src="images/TV.png" alt=""c class="model">
+            <!-- details -->
+                <div class="details">
+                    <!-- <img src="images/History.jpg" alt="" class="logo" width="100px"style="height: auto;"> -->
+                
+                </div>
+
+            </a>
+        </li>
+    </ul>
+
+    
+</div>
+<!-- slider ends -->
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" ></script>
+<script src="lightslider.js"></script>
+
+
+<script>
+    $(document).ready(function () {
+        $('#autoWidth').lightSlider({
+            autoWidth: true,
+            loop: true,
+            onSliderLoad: function () {
+                $('#autoWidth').removeClass('cS-hidden');
+            }
+        });
+    });
+
+</script>   
+<script>
+
+//carousel
+jQuery('.carousel1[data-type="multi"] .item').each(function(){
+    var next = jQuery(this).next();
+    if (!next.length) {
+        next = jQuery(this).siblings(':first');
+    }
+    next.children(':first-child').clone().appendTo(jQuery(this));
+  
+    for (var i=0;i<2;i++) {
+        next=next.next();
+        if (!next.length) {
+            next = jQuery(this).siblings(':first');
+        }
+        next.children(':first-child').clone().appendTo($(this));
+    }
+});
+//Ending of small carosel
+
+    </script>
+</body>
+</html>
