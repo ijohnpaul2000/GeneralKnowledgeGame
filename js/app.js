@@ -192,7 +192,7 @@ window.onload = function(){
 
 
 function timer(){
-    var timeCounter = 15;
+    var timeCounter = 16;
 
     myInterval = setInterval(() => {
         timeCounter--;
